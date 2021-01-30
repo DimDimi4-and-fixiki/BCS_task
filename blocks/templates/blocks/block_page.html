@@ -6,13 +6,37 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 <body>
-    {% block content %}
-        {% for x in content %}
-            {{x}}
-        {% endfor %}
-    {% endblock %}
+
+<p class="h2">Info on block with height = {{content.height}}</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Height</th>
+        <th scope="col">Hash</th>
+        <th scope="col">Timestamp</th>
+        <th scope="col">Miner Address</th>
+        <th scope="col">Number of transactions</th>
+    </tr>
+    </thead>
+    <tbody/>
+    <tr>
+        <td>{{content.height}}</td>
+        <td>{{content.hash}}</td>
+        <td>{{content.timestamp}}</td>
+        <td>{{content.miner}}</td>
+        <td>{{content.transactionCount}}</td>
+    </tr>
+
+    </tbody>
+
+
+</table>
 
 </body>
 </html>

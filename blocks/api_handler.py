@@ -18,7 +18,28 @@ class ApiHandler(object):
 
         response = requests.get(request_url)  # response from API
         json_response = response.json()
-        return json_response["hash"]
+        height = json_response["height"]
+        block_hash = json_response["hash"]
+        timestamp = json_response["timestamp"]
+        miner = json_response["miner"]
+        num_of_transactions = len(json_response["transactions"])
+        json_response["transactionCount"] = num_of_transactions
+
+        if not self.block_table_handler.check_by_height(height=height):
+            elem = self.block_table_handler.get_block_by_height(height=height)
+            json_response["height"] = elem.height
+            json_response["hash"] = elem.hash
+            json_response["miner"] = elem.miner
+            json_response["timestamp"] = elem.timestamp
+            json_response["transactionCount"] = elem.number_of_transactions
+        else:
+            self.block_table_handler.add_block(height=height,
+                                               hash=block_hash,
+                                               timestamp=timestamp,
+                                               miner=miner,
+                                               num_of_transactions=num_of_transactions)
+        return json_response
+
 
     def get_page(self, page_num: int, page_size: int):
 
