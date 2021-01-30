@@ -12,3 +12,6 @@ class Block(models.Model):
     timestamp = models.IntegerField()
     miner = models.CharField(max_length=300)
     number_of_transactions = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.height}, {self.hash}"

@@ -6,7 +6,8 @@ from .models import Block
 
 
 class BLockAdmin(admin.ModelAdmin):
-    list_display = ('height', 'hash')
+    list_display = ('height', 'hash', 'number_of_transactions')
+    search_fields = ("height__startswith", )
 
 
 admin.site.site_header = "Admin Panel"
