@@ -1,10 +1,6 @@
-aiohttp==3.6.2
-apipkg==1.5
-apturl==0.5.2
 asn1crypto==0.24.0
 async-timeout==3.0.1
 asyncio==3.4.3
-asyncnewsapi==0.2
 attrs==19.3.0
 backcall==0.1.0
 bs4==0.0.1
