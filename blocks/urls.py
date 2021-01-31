@@ -6,9 +6,9 @@ from django.views.generic.base import RedirectView
 
 urlpatterns = [
 
-    path('blocks/<int:height>', views.show_block_by_height),
-    path('<int:page_num>', views.index),
-    path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='1'))
+    path('blocks/<int:height>', views.show_block_by_height),  # Block page
+    path('<int:page_num>', views.index),  # Page with Blocks
+    path('admin/', admin.site.urls),  # Admin Panel
+    path('', RedirectView.as_view(url='1'))  # Brings user to the first page
 
 ]

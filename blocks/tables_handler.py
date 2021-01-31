@@ -13,11 +13,16 @@ class BlockTableHandler(object):
         return not res
 
     def add_block(self, **kwargs):
+        """
+        Adds block to the Block table
+        """
         height = kwargs.get("height")
         block_hash = kwargs.get("hash")
         timestamp = kwargs.get("timestamp")
         miner = kwargs.get("miner")
         num_of_transactions = kwargs.get("num_of_transactions")
+
+        # Block is not in the table:
         if self.check_by_height(height=height):
             block = Block(height=height,
                           hash=block_hash,
@@ -27,7 +32,9 @@ class BlockTableHandler(object):
             block.save()
 
     def get_block_by_height(self, height: int):
-        res = {}
+        """
+        Gets block info by its height
+        """
         block = Block.objects.get(height=height)
         return block
 

@@ -6,12 +6,13 @@ from .models import Block
 
 
 class BLockAdmin(admin.ModelAdmin):
+    # Admin logic for Block table
     list_display = ('height', 'hash', 'number_of_transactions')
     search_fields = ("height__startswith", )
 
 
-admin.site.site_header = "Admin Panel"
+admin.site.site_header = "Admin Panel"  # changes header
 
-admin.site.register(Block, BLockAdmin)
-admin.site.unregister(Group)
-admin.site.unregister(User)
+admin.site.register(Block, BLockAdmin)  # Adds Block table to the panel
+admin.site.unregister(Group)  # Removes Groups
+admin.site.unregister(User)  # Removes Users
