@@ -94,10 +94,7 @@ sqlite3-api==1.0.5
 sqlitemap==0.2.0
 sqlparse==0.3.0
 starlette==0.13.6
-system-service==0.3
-systemd-python==234
 tifffile==2020.5.11
-tkintertoy==1.1.0
 toml==0.10.2
 tornado==6.0.4
 traitlets==4.3.3
