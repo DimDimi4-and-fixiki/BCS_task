@@ -38,7 +38,6 @@ jedi==0.16.0
 Jinja2==2.11.1
 joblib==0.14.1
 jsonschema==3.2.0
-language-selector==0.1
 launchpadlib==1.10.6
 lazr.restfulclient==0.13.5
 lazr.uri==1.0.3
@@ -125,7 +124,6 @@ tornado==6.0.4
 traitlets==4.3.3
 typing-extensions==3.7.4.3
 tzlocal==1.5.1
-ubuntu-drivers-common==0.0.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.25.9
