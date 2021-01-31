@@ -5,7 +5,8 @@
 - **Stores Blocks Info in the database**
 - **Provides Admin Panel for editing blocks info**  
   
-## URLs:  <img src="https://vk.com/emoji/e/f09f8c90.png" height="28px"/>
+## URLs:  <img src="https://vk.com/emoji/e/f09f8c90.png" height="28px"/>  
+- **Deployed version could be found on `https://bcs-web-sait.herokuapp.com/`**
 - **By default, an empty URL will bring you to the 1st page with blocks**
 - **To access a particular page with blocks use URL `/<page_num:int>`**  
 - **To get information on a block with a particular height use `/blocks/<block_height:int>`**  
