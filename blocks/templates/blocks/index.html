@@ -33,13 +33,21 @@
         </thead>
         <tbody>
             {% for i in data %}
-                <tr>
-                    <td>{{i.height}}</td>
-                    <td>{{i.hash}}</td>
-                    <td>{{i.timestamp}}</td>
-                    <td>{{i.miner}}</td>
-                    <td>{{i.transactionCount}}</td>
-                </tr>
+
+                    <tr>
+
+                            <td>
+                                <a href="/blocks/{{i.height}}">
+                                    {{i.height}}
+                                <a/>
+                            </td>
+
+                        <td>{{i.hash}}</td>
+                        <td>{{i.timestamp}}</td>
+                        <td>{{i.miner}}</td>
+                        <td>{{i.transactionCount}}</td>
+                    </tr>
+
             {% endfor %}
         </tbody>
 
