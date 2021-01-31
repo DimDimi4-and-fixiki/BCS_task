@@ -79,15 +79,12 @@ PyWavelets==1.1.1
 pyxdg==0.25
 PyYAML==5.3
 pyzmq==19.0.0
-qtconsole==4.5.5
 remarkable==1.87
 reportlab==3.4.0
 requests==2.23.0
 requests-oauthlib==0.8.0
 requests-unixsocket==0.1.5
 roman==2.0.0
-schedule==0.6.0
-schedule-jobs==0.0.4
 scour==0.36
 screen-resolution-extra==0.0.0
 SecretStorage==2.3.1
