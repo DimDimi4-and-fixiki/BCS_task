@@ -9,7 +9,6 @@ chardet==3.0.4
 cycler==0.10.0
 Cython==0.29.17
 dataclasses==0.8
-distro-info===0.18ubuntu0.18.04.1
 Django==2.2
 django-cors-headers==2.4.0
 djangorestframework==3.10.2
